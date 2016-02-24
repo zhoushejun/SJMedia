@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFA17F3E1C7D4D6D00A501E3 /* SJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17F3D1C7D4D6D00A501E3 /* SJRootViewController.m */; };
 		CFE1718A1C7D4C220005BC0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE171891C7D4C220005BC0A /* main.m */; };
 		CFE1718D1C7D4C220005BC0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1718C1C7D4C220005BC0A /* AppDelegate.m */; };
-		CFE171901C7D4C220005BC0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1718F1C7D4C220005BC0A /* ViewController.m */; };
 		CFE171931C7D4C220005BC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE171911C7D4C220005BC0A /* Main.storyboard */; };
 		CFE171951C7D4C220005BC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE171941C7D4C220005BC0A /* Assets.xcassets */; };
 		CFE171981C7D4C220005BC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE171961C7D4C220005BC0A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CFA17F3C1C7D4D6D00A501E3 /* SJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJRootViewController.h; sourceTree = "<group>"; };
+		CFA17F3D1C7D4D6D00A501E3 /* SJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJRootViewController.m; sourceTree = "<group>"; };
 		CFE171851C7D4C220005BC0A /* SJMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE171891C7D4C220005BC0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFE1718B1C7D4C220005BC0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFE1718C1C7D4C220005BC0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CFE1718E1C7D4C220005BC0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CFE1718F1C7D4C220005BC0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CFE171921C7D4C220005BC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFE171941C7D4C220005BC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE171971C7D4C220005BC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +39,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFA17F371C7D4D2100A501E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFA17F381C7D4D2100A501E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFA17F391C7D4D2100A501E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFA17F3A1C7D4D5200A501E3 /* AudioQueueServices */,
+				CFA17F3B1C7D4D5200A501E3 /* RootViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFA17F3A1C7D4D5200A501E3 /* AudioQueueServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AudioQueueServices;
+			sourceTree = "<group>";
+		};
+		CFA17F3B1C7D4D5200A501E3 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFA17F3C1C7D4D6D00A501E3 /* SJRootViewController.h */,
+				CFA17F3D1C7D4D6D00A501E3 /* SJRootViewController.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
 		CFE1717C1C7D4C220005BC0A = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +97,9 @@
 		CFE171871C7D4C220005BC0A /* SJMedia */ = {
 			isa = PBXGroup;
 			children = (
-				CFE1718B1C7D4C220005BC0A /* AppDelegate.h */,
-				CFE1718C1C7D4C220005BC0A /* AppDelegate.m */,
-				CFE1718E1C7D4C220005BC0A /* ViewController.h */,
-				CFE1718F1C7D4C220005BC0A /* ViewController.m */,
-				CFE171911C7D4C220005BC0A /* Main.storyboard */,
-				CFE171941C7D4C220005BC0A /* Assets.xcassets */,
-				CFE171961C7D4C220005BC0A /* LaunchScreen.storyboard */,
-				CFE171991C7D4C220005BC0A /* Info.plist */,
+				CFA17F371C7D4D2100A501E3 /* Model */,
+				CFA17F381C7D4D2100A501E3 /* View */,
+				CFA17F391C7D4D2100A501E3 /* ViewController */,
 				CFE171881C7D4C220005BC0A /* Supporting Files */,
 			);
 			path = SJMedia;
@@ -75,6 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				CFE171891C7D4C220005BC0A /* main.m */,
+				CFE1718B1C7D4C220005BC0A /* AppDelegate.h */,
+				CFE1718C1C7D4C220005BC0A /* AppDelegate.m */,
+				CFE171911C7D4C220005BC0A /* Main.storyboard */,
+				CFE171941C7D4C220005BC0A /* Assets.xcassets */,
+				CFE171961C7D4C220005BC0A /* LaunchScreen.storyboard */,
+				CFE171991C7D4C220005BC0A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,9 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE171901C7D4C220005BC0A /* ViewController.m in Sources */,
 				CFE1718D1C7D4C220005BC0A /* AppDelegate.m in Sources */,
 				CFE1718A1C7D4C220005BC0A /* main.m in Sources */,
+				CFA17F3E1C7D4D6D00A501E3 /* SJRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +340,7 @@
 				CFE1719E1C7D4C220005BC0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

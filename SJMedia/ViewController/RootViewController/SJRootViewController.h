@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SJRootViewController.h
 //  SJMedia
 //
 //  Created by shejun.zhou on 16/2/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SJRootViewController : UITableViewController
 
 @end
-
