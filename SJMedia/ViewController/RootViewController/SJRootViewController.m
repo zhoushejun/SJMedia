@@ -7,6 +7,7 @@
 //
 
 #import "SJRootViewController.h"
+#import "SJAudioQueueServicesViewController.h"
 
 @interface SJRootViewController ()
 
@@ -54,6 +55,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (0 == indexPath.row) {
+//        UIStoryboard *s = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        SJAudioQueueServicesViewController *audio = [s instantiateViewControllerWithIdentifier:NSStringFromClass([SJAudioQueueServicesViewController class])];
+        SJAudioQueueServicesViewController *audio = [[SJAudioQueueServicesViewController alloc] init];
+        [self.navigationController pushViewController:audio animated:YES];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
