@@ -33,6 +33,9 @@
 		CFA17FCD1C7D6C5B00A501E3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA17FB81C7D667400A501E3 /* AudioToolbox.framework */; };
 		CFA17FD11C7D6DB900A501E3 /* bupan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFA17FCF1C7D6DB900A501E3 /* bupan.mp3 */; };
 		CFA17FD21C7D6DB900A501E3 /* 近未来 - 苏打绿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFA17FD01C7D6DB900A501E3 /* 近未来 - 苏打绿.mp3 */; };
+		CFA17FDB1C7D963800A501E3 /* SJMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17FDA1C7D963800A501E3 /* SJMoviePlayerController.m */; };
+		CFA17FDE1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA17FDC1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 */; };
+		CFA17FDF1C7D96FF00A501E3 /* IMG_1393.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA17FDD1C7D96FF00A501E3 /* IMG_1393.mp4 */; };
 		CFE1718A1C7D4C220005BC0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE171891C7D4C220005BC0A /* main.m */; };
 		CFE1718D1C7D4C220005BC0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1718C1C7D4C220005BC0A /* AppDelegate.m */; };
 		CFE171931C7D4C220005BC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE171911C7D4C220005BC0A /* Main.storyboard */; };
@@ -87,6 +90,10 @@
 		CFA17FC01C7D66E400A501E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CFA17FCF1C7D6DB900A501E3 /* bupan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bupan.mp3; sourceTree = "<group>"; };
 		CFA17FD01C7D6DB900A501E3 /* 近未来 - 苏打绿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "近未来 - 苏打绿.mp3"; sourceTree = "<group>"; };
+		CFA17FD91C7D963800A501E3 /* SJMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMoviePlayerController.h; sourceTree = "<group>"; };
+		CFA17FDA1C7D963800A501E3 /* SJMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMoviePlayerController.m; sourceTree = "<group>"; };
+		CFA17FDC1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 540121586200679827792604577.mp4; sourceTree = "<group>"; };
+		CFA17FDD1C7D96FF00A501E3 /* IMG_1393.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1393.mp4; sourceTree = "<group>"; };
 		CFE171851C7D4C220005BC0A /* SJMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE171891C7D4C220005BC0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFE1718B1C7D4C220005BC0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +137,7 @@
 		CFA17F391C7D4D2100A501E3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CFA17FD81C7D95FA00A501E3 /* MPMoviePlayerController */,
 				CFA17F3A1C7D4D5200A501E3 /* AudioQueueServices */,
 				CFA17F3B1C7D4D5200A501E3 /* RootViewController */,
 			);
@@ -224,8 +232,19 @@
 			children = (
 				CFA17FCF1C7D6DB900A501E3 /* bupan.mp3 */,
 				CFA17FD01C7D6DB900A501E3 /* 近未来 - 苏打绿.mp3 */,
+				CFA17FDC1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 */,
+				CFA17FDD1C7D96FF00A501E3 /* IMG_1393.mp4 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFA17FD81C7D95FA00A501E3 /* MPMoviePlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				CFA17FD91C7D963800A501E3 /* SJMoviePlayerController.h */,
+				CFA17FDA1C7D963800A501E3 /* SJMoviePlayerController.m */,
+			);
+			path = MPMoviePlayerController;
 			sourceTree = "<group>";
 		};
 		CFE1717C1C7D4C220005BC0A = {
@@ -335,9 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE171981C7D4C220005BC0A /* LaunchScreen.storyboard in Resources */,
+				CFA17FDF1C7D96FF00A501E3 /* IMG_1393.mp4 in Resources */,
 				CFA17FD11C7D6DB900A501E3 /* bupan.mp3 in Resources */,
 				CFE171951C7D4C220005BC0A /* Assets.xcassets in Resources */,
 				CFE171931C7D4C220005BC0A /* Main.storyboard in Resources */,
+				CFA17FDE1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 in Resources */,
 				CFA17FD21C7D6DB900A501E3 /* 近未来 - 苏打绿.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +372,7 @@
 			files = (
 				CFA17F801C7D5BF100A501E3 /* SJAudioQueueServicesViewController.m in Sources */,
 				CFA17FB11C7D5C0600A501E3 /* FSCheckContentTypeRequest.m in Sources */,
+				CFA17FDB1C7D963800A501E3 /* SJMoviePlayerController.m in Sources */,
 				CFA17FA81C7D5C0600A501E3 /* caching_stream.cpp in Sources */,
 				CFE1718D1C7D4C220005BC0A /* AppDelegate.m in Sources */,
 				CFA17FA71C7D5C0600A501E3 /* audio_stream.cpp in Sources */,
