@@ -36,6 +36,7 @@
 		CFA17FDB1C7D963800A501E3 /* SJMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17FDA1C7D963800A501E3 /* SJMoviePlayerController.m */; };
 		CFA17FDE1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA17FDC1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 */; };
 		CFA17FDF1C7D96FF00A501E3 /* IMG_1393.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA17FDD1C7D96FF00A501E3 /* IMG_1393.mp4 */; };
+		CFA17FE51C7DA27800A501E3 /* SJMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17FE41C7DA27800A501E3 /* SJMoviePlayerViewController.m */; };
 		CFE1718A1C7D4C220005BC0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE171891C7D4C220005BC0A /* main.m */; };
 		CFE1718D1C7D4C220005BC0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE1718C1C7D4C220005BC0A /* AppDelegate.m */; };
 		CFE171931C7D4C220005BC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE171911C7D4C220005BC0A /* Main.storyboard */; };
@@ -94,6 +95,8 @@
 		CFA17FDA1C7D963800A501E3 /* SJMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMoviePlayerController.m; sourceTree = "<group>"; };
 		CFA17FDC1C7D96FF00A501E3 /* 540121586200679827792604577.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 540121586200679827792604577.mp4; sourceTree = "<group>"; };
 		CFA17FDD1C7D96FF00A501E3 /* IMG_1393.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_1393.mp4; sourceTree = "<group>"; };
+		CFA17FE31C7DA27800A501E3 /* SJMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJMoviePlayerViewController.h; sourceTree = "<group>"; };
+		CFA17FE41C7DA27800A501E3 /* SJMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJMoviePlayerViewController.m; sourceTree = "<group>"; };
 		CFE171851C7D4C220005BC0A /* SJMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE171891C7D4C220005BC0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFE1718B1C7D4C220005BC0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				CFA17FD81C7D95FA00A501E3 /* MPMoviePlayerController */,
+				CFA17FE21C7DA25F00A501E3 /* MPMoviePlayerViewController */,
 				CFA17F3A1C7D4D5200A501E3 /* AudioQueueServices */,
 				CFA17F3B1C7D4D5200A501E3 /* RootViewController */,
 			);
@@ -245,6 +249,15 @@
 				CFA17FDA1C7D963800A501E3 /* SJMoviePlayerController.m */,
 			);
 			path = MPMoviePlayerController;
+			sourceTree = "<group>";
+		};
+		CFA17FE21C7DA25F00A501E3 /* MPMoviePlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFA17FE31C7DA27800A501E3 /* SJMoviePlayerViewController.h */,
+				CFA17FE41C7DA27800A501E3 /* SJMoviePlayerViewController.m */,
+			);
+			path = MPMoviePlayerViewController;
 			sourceTree = "<group>";
 		};
 		CFE1717C1C7D4C220005BC0A = {
@@ -396,6 +409,7 @@
 				CFA17FAC1C7D5C0600A501E3 /* id3_parser.cpp in Sources */,
 				CFA17FAA1C7D5C0600A501E3 /* file_stream.cpp in Sources */,
 				CFE1718A1C7D4C220005BC0A /* main.m in Sources */,
+				CFA17FE51C7DA27800A501E3 /* SJMoviePlayerViewController.m in Sources */,
 				CFA17F3E1C7D4D6D00A501E3 /* SJRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
