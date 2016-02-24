@@ -8,6 +8,7 @@
 
 #import "SJRootViewController.h"
 #import "SJAudioQueueServicesViewController.h"
+#import "SJMoviePlayerController.h"
 
 @interface SJRootViewController ()
 
@@ -56,10 +57,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (0 == indexPath.row) {
-//        UIStoryboard *s = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        SJAudioQueueServicesViewController *audio = [s instantiateViewControllerWithIdentifier:NSStringFromClass([SJAudioQueueServicesViewController class])];
         SJAudioQueueServicesViewController *audio = [[SJAudioQueueServicesViewController alloc] init];
         [self.navigationController pushViewController:audio animated:YES];
+    }else if (1 == indexPath.row) {
+        SJMoviePlayerController *moviePlayer = [[SJMoviePlayerController alloc] init];
+        [self.navigationController pushViewController:moviePlayer animated:YES];
     }
 }
 
@@ -77,7 +79,8 @@
 - (NSMutableArray *)dataSources {
     if (!_dataSources) {
         _dataSources = [[NSMutableArray alloc] init];
-        [_dataSources addObject:@"AudioQueueServices"];
+        [_dataSources addObject:@"SJAudioQueueServicesViewController"];
+        [_dataSources addObject:@"SJMoviePlayerController"];
     }
     return _dataSources;
 }
