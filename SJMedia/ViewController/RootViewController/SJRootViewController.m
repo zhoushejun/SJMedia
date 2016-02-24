@@ -9,6 +9,7 @@
 #import "SJRootViewController.h"
 #import "SJAudioQueueServicesViewController.h"
 #import "SJMoviePlayerController.h"
+#import "SJMoviePlayerViewController.h"
 
 @interface SJRootViewController ()
 
@@ -62,6 +63,9 @@
     }else if (1 == indexPath.row) {
         SJMoviePlayerController *moviePlayer = [[SJMoviePlayerController alloc] init];
         [self.navigationController pushViewController:moviePlayer animated:YES];
+    }else if (2 == indexPath.row) {
+        SJMoviePlayerViewController *moviePlayer = [[SJMoviePlayerViewController alloc] init];
+        [self.navigationController pushViewController:moviePlayer animated:YES];
     }
 }
 
@@ -81,6 +85,7 @@
         _dataSources = [[NSMutableArray alloc] init];
         [_dataSources addObject:@"SJAudioQueueServicesViewController"];
         [_dataSources addObject:@"SJMoviePlayerController"];
+        [_dataSources addObject:@"SJMoviePlayerViewController"];
     }
     return _dataSources;
 }
