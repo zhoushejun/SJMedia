@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1851D8811E2A4A8500C275CE /* SJAVAudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1851D8801E2A4A8500C275CE /* SJAVAudioRecorderViewController.m */; };
 		CFA17F3E1C7D4D6D00A501E3 /* SJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17F3D1C7D4D6D00A501E3 /* SJRootViewController.m */; };
 		CFA17F801C7D5BF100A501E3 /* SJAudioQueueServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA17F7F1C7D5BF100A501E3 /* SJAudioQueueServicesViewController.m */; };
 		CFA17FA61C7D5C0600A501E3 /* audio_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFA17F831C7D5C0600A501E3 /* audio_queue.cpp */; };
@@ -45,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1851D87F1E2A4A8500C275CE /* SJAVAudioRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAVAudioRecorderViewController.h; sourceTree = "<group>"; };
+		1851D8801E2A4A8500C275CE /* SJAVAudioRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJAVAudioRecorderViewController.m; sourceTree = "<group>"; };
 		CFA17F3C1C7D4D6D00A501E3 /* SJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJRootViewController.h; sourceTree = "<group>"; };
 		CFA17F3D1C7D4D6D00A501E3 /* SJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJRootViewController.m; sourceTree = "<group>"; };
 		CFA17F7E1C7D5BF100A501E3 /* SJAudioQueueServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJAudioQueueServicesViewController.h; sourceTree = "<group>"; };
@@ -123,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1851D87E1E2A4A5E00C275CE /* AVAudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				1851D87F1E2A4A8500C275CE /* SJAVAudioRecorderViewController.h */,
+				1851D8801E2A4A8500C275CE /* SJAVAudioRecorderViewController.m */,
+			);
+			path = AVAudioRecorder;
+			sourceTree = "<group>";
+		};
 		CFA17F371C7D4D2100A501E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +152,10 @@
 		CFA17F391C7D4D2100A501E3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CFA17F3A1C7D4D5200A501E3 /* AudioQueueServices */,
+				1851D87E1E2A4A5E00C275CE /* AVAudioRecorder */,
 				CFA17FD81C7D95FA00A501E3 /* MPMoviePlayerController */,
 				CFA17FE21C7DA25F00A501E3 /* MPMoviePlayerViewController */,
-				CFA17F3A1C7D4D5200A501E3 /* AudioQueueServices */,
 				CFA17F3B1C7D4D5200A501E3 /* RootViewController */,
 			);
 			path = ViewController;
@@ -340,6 +353,7 @@
 				TargetAttributes = {
 					CFE171841C7D4C220005BC0A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6NLHX4X49M;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -393,6 +407,7 @@
 				CFA17FDB1C7D963800A501E3 /* SJMoviePlayerController.m in Sources */,
 				CFA17FA81C7D5C0600A501E3 /* caching_stream.cpp in Sources */,
 				CFE1718D1C7D4C220005BC0A /* AppDelegate.m in Sources */,
+				1851D8811E2A4A8500C275CE /* SJAVAudioRecorderViewController.m in Sources */,
 				CFA17FA71C7D5C0600A501E3 /* audio_stream.cpp in Sources */,
 				CFA17FAE1C7D5C0600A501E3 /* stream_configuration.cpp in Sources */,
 				CFA17FB61C7D5C0600A501E3 /* Reachability.m in Sources */,
@@ -522,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NLHX4X49M;
 				ENABLE_BITCODE = NO;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = SJMedia/SJMedia.pch;
@@ -537,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NLHX4X49M;
 				ENABLE_BITCODE = NO;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = SJMedia/SJMedia.pch;
