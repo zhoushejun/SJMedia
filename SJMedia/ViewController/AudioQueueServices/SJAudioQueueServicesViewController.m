@@ -72,9 +72,14 @@
     return _audioStream;
 }
 
-- (void)tappedPlayButtonAction:(id)sender {
+- (void)tappedPlayButtonAction:(UIButton *)sender {
     if (![self.audioStream isPlaying]) {
         [self.audioStream play];
+        [sender setTitle:@"停止" forState:UIControlStateNormal];
+    }
+    else {
+        [sender setTitle:@"播放" forState:UIControlStateNormal];
+        [self.audioStream stop];
     }
 }
 
